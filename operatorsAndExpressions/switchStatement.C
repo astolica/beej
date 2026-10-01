@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main(void) {
     /* take action accordng to an integer expression*/
 
