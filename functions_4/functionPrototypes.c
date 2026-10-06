@@ -7,7 +7,7 @@ int main() {
     int z; 
     z = foo(); // foo has already been declared above so we can call it 
     printf("%d\n", z); 
-
+ 
 
 
 }
