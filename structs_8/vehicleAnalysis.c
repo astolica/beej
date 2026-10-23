@@ -17,19 +17,17 @@ int main() {
     printf("Welcome, this program is to analyze your car and store it.\n");
 
     printf("Please enter your car's make\n");
-    if (!fgets(car1.make, sizeof car1.make, stdin)){
-        fprintf(stderr, "Something went wrong in your input, probably too big\n");
-    } 
+    scanf("%s", &car_ptr->make);
 
     // i'll do ts later 
     printf("Please enter your car's model\n"); 
-    scanf("%s", &car1.model);
+    scanf("%s", &car_ptr->model);
 
     printf("Please enter the year your car was made\n");
-    scanf("%d", &car1.year);
+    scanf("%d", &car_ptr->year);
 
     printf("Please enter the number of miles your car has!\n");
-    scanf("%ld", &car1.miles);
+    scanf("%ld", &car_ptr->miles);
 
     printf("Your car's make is %s, and the model is %s. The year it was made wa sin %d, and it has %ld miles",
     car1.make, car1.model, car1.year, car1.miles);
