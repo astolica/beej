@@ -6,13 +6,19 @@ int main(void) {
     void part indicates we do not know the TYPE of thing. Let's you be
     a whole lot more flexible with C. */
 
-    // YOU CANNOT DO POINTER ARITHMETIC ON A VOID POINTER! 
+    // YOU CANNOT DO POINTER ARITHMETIC ON A VOID POINTER! So no p + 1 shenanigans 
     // You also can't dereference a void pointer.. 
     // You also can't use the arrow operator on a void pointer
-    // void *memcpy(void *s1, void *s2, size_t n); more on this later
 
     int a[] = {11, 22, 33}; 
     int b[3]; 
+
+    /*
+    memcpy() is a function with the following parameters
+    void *memcpy(void *s1, void *s2, size_t n); (size_t shows the size of n in bytes)
+    
+    You can copy any kind of data from s2 into s1, very convenient. 
+    */
 
     memcpy(b, a, 3 * sizeof(int)); // copies 3 ints of data from a into b 
 
