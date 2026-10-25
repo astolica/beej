@@ -30,11 +30,11 @@ int main() {
     int *c = malloc(sizeof(int) * 10); // allocate space for 10 ints 
 
     for (int i = 0; i < 10; i++){
-        p[i] = i * 5; // prints 5 - 45 
+        p[i] = i * 5; // stores i + 5 into the array 
     }
 
     for (int i = 0; i < 10; i++){
-        printf("%d\n", p[i]);
+        printf("%d\n", p[i]); // // prints each element of the array out
     }
 
     free(p); // freeing p from memory's grasp 
